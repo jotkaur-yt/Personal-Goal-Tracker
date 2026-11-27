@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Manage Goals | GoalSpace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/goals.js" defer></script>
+  </head>
+  <body class="app-page">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"
+        ><span class="brand-mark">G</span> GoalSpace</a
+      >
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a class="active" href="add-goal.html">Manage goals</a
+        ><a href="progress.html">Progress</a
+        ><a href="calendar.html">Calendar</a>
+      </nav>
+      <div class="user-area">
+        <span id="userGreeting"></span
+        ><button id="logoutBtn" class="btn btn-outline btn-small">
+          Log out
+        </button>
+      </div>
+    </header>
+    <main class="page-wrap narrow-wrap">
+      <section class="page-heading">
+        <div>
+          <span class="eyebrow">TAKE THE NEXT STEP</span>
+          <h1 id="formTitle">Create a new goal</h1>
+          <p class="muted">Be specific about what you want to achieve.</p>
+        </div>
+      </section>
+      <section class="content-card">
+        <form id="goalForm" class="goal-form">
+          <input type="hidden" id="goalId" /><label for="goalName"
+            >Goal title</label
+          ><input
+            id="goalName"
+            placeholder="e.g. Learn JavaScript"
+            required
+            maxlength="70"
+          /><label for="description">Description</label
+          ><textarea
+            id="description"
+            rows="3"
+            placeholder="What does success look like?"
+          ></textarea>
+          <div class="form-grid">
+            <div>
+              <label for="category">Category</label
+              ><select id="category">
+                <option>Personal</option>
+                <option>Education</option>
+                <option>Career</option>
+                <option>Health</option>
+                <option>Finance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="priority">Priority</label
+              ><select id="priority">
+                <option>Medium</option>
+                <option>High</option>
+                <option>Low</option>
+              </select>
+            </div>
+            <div>
+              <label for="startDate">Start date</label
+              ><input id="startDate" type="date" />
+            </div>
+            <div>
+              <label for="deadline">Deadline</label
+              ><input id="deadline" type="date" />
+            </div>
+            <div>
+              <label for="status">Status</label
+              ><select id="status">
+                <option>Pending</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+              </select>
+            </div>
+            <div>
+              <label for="progress">Progress (%)</label
+              ><input id="progress" type="number" min="0" max="100" value="0" />
+            </div>
+          </div>
+          <p id="goalMessage" class="form-message" aria-live="polite"></p>
+          <div class="form-actions">
+            <a href="dashboard.html" class="btn btn-outline">Cancel</a
+            ><button class="btn btn-primary" type="submit">Save goal</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

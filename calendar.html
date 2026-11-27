@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calendar | GoalSpace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/calendar.js" defer></script>
+  </head>
+  <body class="app-page">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"
+        ><span class="brand-mark">G</span> GoalSpace</a
+      >
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a href="add-goal.html">Manage goals</a
+        ><a href="progress.html">Progress</a
+        ><a class="active" href="calendar.html">Calendar</a>
+      </nav>
+      <div class="user-area">
+        <span id="userGreeting"></span
+        ><button id="logoutBtn" class="btn btn-outline btn-small">
+          Log out
+        </button>
+      </div>
+    </header>
+    <main class="page-wrap narrow-wrap">
+      <section class="page-heading">
+        <div>
+          <span class="eyebrow">PLAN YOUR DAYS</span>
+          <h1>Goal calendar</h1>
+          <p class="muted">
+            A compact monthly view of your goal deadlines and plans.
+          </p>
+        </div>
+      </section>
+      <section class="content-card calendar-card">
+        <div class="calendar-head">
+          <button
+            class="btn btn-outline btn-small"
+            id="prevMonth"
+            aria-label="Previous month"
+          >
+            ‹
+          </button>
+          <h2 id="monthLabel"></h2>
+          <button
+            class="btn btn-outline btn-small"
+            id="nextMonth"
+            aria-label="Next month"
+          >
+            ›
+          </button>
+        </div>
+        <div class="calendar-grid calendar-week">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span
+          ><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div id="calendarDays" class="calendar-grid"></div>
+        <div class="calendar-legend">
+          <span><i></i> Goal deadline</span
+          ><span class="muted">Select a date to see its goals</span>
+        </div>
+        <div id="selectedDayGoals" class="day-details">
+          Choose a date to view scheduled goals.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

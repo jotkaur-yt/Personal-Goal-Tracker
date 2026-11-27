@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Progress | GoalSpace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/progress.js" defer></script>
+  </head>
+  <body class="app-page">
+    <header class="topbar">
+      <a class="brand" href="dashboard.html"
+        ><span class="brand-mark">G</span> GoalSpace</a
+      >
+      <nav>
+        <a href="dashboard.html">Dashboard</a
+        ><a href="add-goal.html">Manage goals</a
+        ><a class="active" href="progress.html">Progress</a
+        ><a href="calendar.html">Calendar</a>
+      </nav>
+      <div class="user-area">
+        <span id="userGreeting"></span
+        ><button id="logoutBtn" class="btn btn-outline btn-small">
+          Log out
+        </button>
+      </div>
+    </header>
+    <main class="page-wrap">
+      <section class="page-heading">
+        <div>
+          <span class="eyebrow">YOUR CONSISTENCY COUNTS</span>
+          <h1>Progress report</h1>
+          <p class="muted">See how far you've come, one goal at a time.</p>
+        </div>
+      </section>
+      <section class="progress-overview content-card">
+        <div>
+          <span class="eyebrow">OVERALL COMPLETION</span
+          ><strong id="overallPercent" class="big-percent">0%</strong>
+          <p class="muted" id="overallText">
+            Add goals to start tracking your progress.
+          </p>
+        </div>
+        <div class="circle-progress" id="progressCircle">
+          <span id="circlePercent">0%</span>
+        </div>
+      </section>
+      <section class="content-card">
+        <div class="section-head">
+          <div>
+            <h2>Progress by goal</h2>
+            <p class="muted">
+              Update a goal from Manage goals to change its progress.
+            </p>
+          </div>
+        </div>
+        <div id="progressList" class="goal-list"></div>
+        <p id="progressEmpty" class="empty-state">No goals to show yet.</p>
+      </section>
+    </main>
+  </body>
+</html>

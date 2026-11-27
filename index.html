@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login | GoalSpace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/auth.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-visual">
+        <a class="brand brand-light" href="index.html"
+          ><span class="brand-mark">G</span> GoalSpace</a
+        >
+        <div class="visual-copy">
+          <span class="eyebrow">MAKE EVERY DAY COUNT</span>
+          <h1>Small steps.<br /><span>Big progress.</span></h1>
+          <p>
+            Turn the things you want to achieve into goals you can plan, track
+            and complete.
+          </p>
+          <div class="visual-stats">
+            <div><strong>01</strong><span>Set a goal</span></div>
+            <div><strong>02</strong><span>Build a plan</span></div>
+            <div><strong>03</strong><span>Make it happen</span></div>
+          </div>
+        </div>
+        <p class="visual-footer">YOUR PERSONAL SPACE FOR PROGRESS</p>
+      </section>
+      <section class="auth-panel">
+        <div class="auth-card">
+          <div class="mobile-brand brand">
+            <span class="brand-mark">G</span> GoalSpace
+          </div>
+          <span class="eyebrow">WELCOME BACK</span>
+          <h2>Sign in to your account</h2>
+          <p class="muted">Continue working towards what matters to you.</p>
+          <form id="loginForm" class="auth-form" novalidate>
+            <label for="loginEmail">Email address</label
+            ><input
+              id="loginEmail"
+              type="email"
+              placeholder="you@example.com"
+            />
+            <div class="label-row">
+              <label for="loginPassword">Password</label
+              ><a href="#" id="forgotLink">Forgot password?</a>
+            </div>
+            <div class="password-wrap">
+              <input
+                id="loginPassword"
+                type="password"
+                placeholder="Enter your password"
+              /><button
+                class="show-password"
+                type="button"
+                data-toggle="loginPassword"
+              >
+                Show
+              </button>
+            </div>
+            <label class="check-row"
+              ><input id="rememberMe" type="checkbox" /><span
+                >Remember me on this device</span
+              ></label
+            ><button class="btn btn-primary btn-full" type="submit">
+              Sign in <span>→</span>
+            </button>
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+          </form>
+          <p class="auth-switch">
+            Don't have an account? <a href="signup.html">Create account</a>
+          </p>
+          <p class="demo-note">
+            Demo project: accounts are stored in this browser only.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

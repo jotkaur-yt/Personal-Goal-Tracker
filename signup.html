@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Create Account | GoalSpace</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/auth.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-visual">
+        <a class="brand brand-light" href="index.html"
+          ><span class="brand-mark">G</span> GoalSpace</a
+        >
+        <div class="visual-copy">
+          <span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+          <h1>Make room for<br /><span>your ambitions.</span></h1>
+          <p>
+            Create a space for your goals, keep your plans organised and
+            celebrate every milestone.
+          </p>
+          <div class="quote-card">
+            “ Progress is built one consistent step at a time. ”
+          </div>
+        </div>
+        <p class="visual-footer">PLAN WITH PURPOSE. GROW WITH CONFIDENCE.</p>
+      </section>
+      <section class="auth-panel">
+        <div class="auth-card">
+          <div class="mobile-brand brand">
+            <span class="brand-mark">G</span> GoalSpace
+          </div>
+          <span class="eyebrow">GET STARTED — IT'S FREE</span>
+          <h2>Create your account</h2>
+          <p class="muted">A few details, then you're ready to plan.</p>
+          <form id="signupForm" class="auth-form" novalidate>
+            <label for="fullName">Full name</label
+            ><input id="fullName" placeholder="Your name" /><label
+              for="signupEmail"
+              >Email address</label
+            ><input
+              id="signupEmail"
+              type="email"
+              placeholder="you@example.com"
+            /><label for="signupPassword">Password</label>
+            <div class="password-wrap">
+              <input
+                id="signupPassword"
+                type="password"
+                placeholder="At least 6 characters"
+              /><button
+                class="show-password"
+                type="button"
+                data-toggle="signupPassword"
+              >
+                Show
+              </button>
+            </div>
+            <label for="confirmPassword">Confirm password</label
+            ><input
+              id="confirmPassword"
+              type="password"
+              placeholder="Enter password again"
+            /><label class="check-row"
+              ><input id="termsCheck" type="checkbox" /><span
+                >I agree to use this demo account on this device.</span
+              ></label
+            ><button class="btn btn-primary btn-full" type="submit">
+              Create account <span>→</span>
+            </button>
+            <p id="signupMessage" class="form-message" aria-live="polite"></p>
+          </form>
+          <p class="auth-switch">
+            Already have an account? <a href="index.html">Sign in</a>
+          </p>
+          <p class="demo-note">
+            Demo project only. Do not use a real or reused password.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
